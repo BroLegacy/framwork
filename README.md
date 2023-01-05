@@ -1,4 +1,3 @@
-
 # Recette de cuisine
 
 Ce projet est un simple framework php !

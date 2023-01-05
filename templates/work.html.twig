@@ -1,0 +1,19 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Work{% endblock %}
+
+{% block head %}
+    {{ parent() }}
+{% endblock %}
+
+{% block stylesheet %}<link rel="stylesheet" href="sass/work.css"/>{% endblock %}
+{% block javascript %}<script src="/js/work.js" defer></script>{% endblock %}
+
+{% block content %}
+    <div class="home-container">
+        <h1>Work</h1>
+        <p class="important">
+            Bienvenue sur la page work.
+        </p>
+    </div>
+{% endblock %}

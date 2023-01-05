@@ -1,0 +1,19 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Home{% endblock %}
+
+{% block head %}
+{{ parent() }}
+{% endblock %}
+
+{% block stylesheet %}<link rel="stylesheet" href="sass/home.css"/>{% endblock %}
+{% block javascript %}<script src="/js/home.js" defer></script>{% endblock %}
+
+{% block content %}
+    <div class="home-container">
+        <h1>Home</h1>
+        <p class="important">
+            Bienvenue sur la home.
+        </p>
+    </div>
+{% endblock %}

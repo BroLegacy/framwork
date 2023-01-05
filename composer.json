@@ -1,0 +1,19 @@
+{
+    "name": "brolegacy/framwork",
+    "autoload": {
+        "psr-4": {
+            "App\\framwork\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "BroLegacy",
+            "email": "corantyn.5@gmail.com"
+        }
+    ],
+    "require": {
+        "twig/twig": "^3.5",
+        "vlucas/phpdotenv": "^5.5",
+        "nikic/fast-route": "^1.3"
+    }
+}

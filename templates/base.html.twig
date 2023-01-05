@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% block head %}
+        <link rel="stylesheet" href="/sass/base.css"/>
+        {% block stylesheet %}{% endblock %}
+        <script src="/js/base.js" defer></script>
+        {% block javascript %}{% endblock %}
+    <title>{% block title %}{% endblock %} - Framwork</title>
+    {% endblock %}
+</head>
+<body>
+<header>
+    <div class="page-wrapper">
+        <div class="nav-wrapper">
+            <div class="grad-bar"></div>
+            <nav class="navbar">
+                <a href="/"><img src="/assets/icon.svg" alt="Company Logo" style="height: 46px; padding-top: 5px"></a>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav no-search">
+                    <li class="nav-item"><a href="/about">About</a></li>
+                    <li class="nav-item"><a href="/work">Work</a></li>
+                    <li class="nav-item"><a href="/contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<div id="content">{% block content %}{% endblock %}</div>
+<footer>
+
+</footer>
+</body>
+</html>

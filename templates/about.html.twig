@@ -1,0 +1,19 @@
+{% extends "base.html.twig" %}
+
+{% block title %}About{% endblock %}
+
+{% block head %}
+    {{ parent() }}
+{% endblock %}
+
+{% block stylesheet %}<link rel="stylesheet" href="sass/about.css"/>{% endblock %}
+{% block javascript %}<script src="/js/about.js" defer></script>{% endblock %}
+
+{% block content %}
+    <div class="home-container">
+        <h1>About</h1>
+        <p class="important">
+            Bienvenue sur la page about.
+        </p>
+    </div>
+{% endblock %}
